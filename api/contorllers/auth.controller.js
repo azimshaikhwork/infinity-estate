@@ -5,11 +5,14 @@ import bcryptjs from 'bcryptjs'
 
 export const signUp = async (req, res, next) => {
     const { username, email, password } = req.body
+    console.log(`recieved pass:${password}`, `recieved email:${email}`, `recieved username:${username}`)
+    // console.log('recieved name', username)
+    // console.log('recieved email', email)
     const hashedPassword = bcryptjs.hashSync(password, 10) //10 here is salt that actually hashes that many times 
     const newUser = new User({ username, email, password: hashedPassword })
     try {
         await newUser.save()
-        res.status(201).send("user created successfully")
+        res.status(201).json("user created successfully")
 
     } catch (err) {
         // res.status(500).send(err.message)

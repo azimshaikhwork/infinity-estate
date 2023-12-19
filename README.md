@@ -12,10 +12,26 @@ hash passwords before storing it in dbs
 so you cannot send hashed password when you made the key as password pass its reference}
 
 01:40:28 - Create a middleware and a function to handle possible errors{ tp many routes will have try and catch so itll become repetitive so we put it in middleware i fuck up big time in many of the cases learn writing pro-efficient code}
-01:50:03 - Complete sign up page Ul
-01:58:55 - Complete sign up page functionality
+01:50:03 - Complete sign up page Ul {tailwind is easy it just needs to be used to it}
+01:58:55 - Complete sign up page functionality{
+    here [e.target.id] is  dynamic jey and we use thisto make code easier cause spread keeps data and on change detects changes so [] takes the id of whatever is changed
+    using fetch learn axios
+    writing proxy for cross connection communication in vite config.js
+    export default defineConfig({
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080',
+        secure: false,
+      },
+    },
+  },
+  plugins: [react()],
+})
+
+}
 02:15:53 - Create sign in API route
-02:33:40 - Complete sign in page functionality
+02:33:40 - Complete sign in page functionality{so we did the functionality and then caught an unknown error the nwe had to switch to try and catch casue the error was not defined on the backend}
 02:38:51 - Add redux toolkit
 02:53:27 - Add redux persist
 03:00:01 - Add Google OAuth functionality
