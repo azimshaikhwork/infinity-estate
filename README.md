@@ -31,7 +31,7 @@ so you cannot send hashed password when you made the key as password pass its re
 
 }
 02:15:53 - Create sign in API route
-02:33:40 - Complete sign in page functionality{so we did the functionality and then caught an unknown error the nwe had to switch to try and catch casue the error was not defined on the backend}
+02:33:40 - Complete sign in page functionality{so we did the functionality and then caught an unknown error the nwe had to switch to try and catch casue the error was not defined on the backend i didnt solve it personally it was done via reference and i need more practice of writing backend  code jwt send the cookies from the backend and is hashed or encrypted so no one can read it we can use it later to decode it to get the user id this time  sign in api flet easy }
 02:38:51 - Add redux toolkit
 02:53:27 - Add redux persist
 03:00:01 - Add Google OAuth functionality

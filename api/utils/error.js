@@ -2,6 +2,7 @@ export const errorHandler = (statusCode, message) => {
     const error = new Error();
     error.message = message;
     error.statusCode = statusCode;
+    console.log('this is from errorHandler', error.message);
     return error;
 }
 

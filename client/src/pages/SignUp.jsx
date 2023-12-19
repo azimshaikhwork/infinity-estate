@@ -59,15 +59,15 @@ const SignUp = () => {
                 <input type="password" name="" id="password" placeholder='Password'
                     className='border p-3 rounded-lg'
                     onChange={handleChange} />
-                <button disabled={loading} className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-90 transition delay-200 disabled:opacity-70'>{loading ? 'Loading...' : 'Submit'}</button>
+                <button disabled={loading} className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-90 transition delay-200 disabled:opacity-70'>{loading ? 'Loading...' : 'Register'}</button>
             </form>
             <div className="flex gap-2 mt-5">
                 <p>Have an Account?</p>
-                <Link>
-                    <span className='text-blue-700'>Sign Up</span>
+                <Link to={"/sign-in"}>
+                    <span className='text-blue-700'>Sign In</span>
                 </Link>
             </div>
-            {error && <p className='text-red-500'>{error}</p>}
+            {error && <p className='bg-red-600 text-stone-100 text-center rounded-lg py-2'>{error}</p>}
         </div>
     )
 }
